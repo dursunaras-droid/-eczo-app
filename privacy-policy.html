@@ -19,17 +19,8 @@
       margin: 0 -16px 32px;
       text-align: center;
     }
-    header .logo {
-      font-size: 28px;
-      font-weight: 800;
-      color: #2db866;
-      letter-spacing: -0.5px;
-    }
-    header .subtitle {
-      font-size: 13px;
-      color: #6e6e73;
-      margin-top: 4px;
-    }
+    header .logo { font-size: 28px; font-weight: 800; color: #2db866; letter-spacing: -0.5px; }
+    header .subtitle { font-size: 13px; color: #6e6e73; margin-top: 4px; }
     .container { max-width: 680px; margin: 0 auto; }
     .card {
       background: #fff;
@@ -40,12 +31,8 @@
     }
     h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
     h2 {
-      font-size: 13px;
-      font-weight: 700;
-      color: #2db866;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 12px;
+      font-size: 13px; font-weight: 700; color: #2db866;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;
     }
     p { font-size: 15px; line-height: 1.65; color: #3a3a3c; margin-bottom: 10px; }
     p:last-child { margin-bottom: 0; }
@@ -55,15 +42,20 @@
     a { color: #2db866; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .badge {
-      display: inline-block;
-      background: #2db866;
-      color: #fff;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 9px;
-      border-radius: 20px;
-      margin-bottom: 14px;
+      display: inline-block; background: #2db866; color: #fff;
+      font-size: 11px; font-weight: 700; padding: 3px 9px;
+      border-radius: 20px; margin-bottom: 14px;
     }
+    .feature-row {
+      display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px;
+    }
+    .feature-icon {
+      font-size: 20px; width: 36px; height: 36px; background: #f0faf4;
+      border-radius: 8px; display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0;
+    }
+    .feature-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+    .feature-text span { font-size: 13px; color: #6e6e73; line-height: 1.5; }
   </style>
 </head>
 <body>
@@ -79,8 +71,40 @@
       <h1>Gizlilik Politikası</h1>
       <p class="updated">Son güncelleme: Haziran 2026</p>
       <p style="margin-top:14px;">
-        Eczo uygulamasını kullandığınız için teşekkür ederiz. Bu politika, uygulamamızın hangi bilgilere eriştiğini, bu bilgileri nasıl kullandığımızı ve sizi nasıl koruduğumuzu açıklamaktadır.
+        Eczo uygulamasını kullandığınız için teşekkür ederiz. Bu politika; nöbetçi eczane, hastane, ilaç bilgisi, sağlık rehberi ve ilaç hatırlatma özelliklerini kapsayan uygulamamızın hangi bilgilere eriştiğini, bu bilgileri nasıl kullandığımızı ve sizi nasıl koruduğumuzu açıklamaktadır.
       </p>
+    </div>
+
+    <div class="card">
+      <h2>Uygulama Özellikleri</h2>
+      <div class="feature-row">
+        <div class="feature-icon">📍</div>
+        <div class="feature-text">
+          <strong>Nöbetçi Eczane &amp; Hastane</strong>
+          <span>Konumunuza en yakın nöbetçi eczane ve hastaneleri harita üzerinde gösterir.</span>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon">💊</div>
+        <div class="feature-text">
+          <strong>İlaç Bilgisi</strong>
+          <span>166+ ilaç hakkında kullanım, doz ve yan etki bilgisi sunar. Tüm bilgiler uygulama içinde saklanır, internet bağlantısı gerektirmez.</span>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon">📖</div>
+        <div class="feature-text">
+          <strong>Sağlık Rehberi</strong>
+          <span>İlk yardım, semptomlar ve sağlıklı yaşam konularında rehberlik sağlar. İnternet bağlantısı gerektirmez.</span>
+        </div>
+      </div>
+      <div class="feature-row">
+        <div class="feature-icon">🔔</div>
+        <div class="feature-text">
+          <strong>İlaç Hatırlatması</strong>
+          <span>Belirttiğiniz saatlerde ilaç alma bildirimi gönderir. Tüm hatırlatma verileri yalnızca cihazınızda saklanır.</span>
+        </div>
+      </div>
     </div>
 
     <div class="card">
@@ -91,7 +115,7 @@
       </p>
       <p style="margin-top:12px;"><strong>Bildirim İzni</strong></p>
       <p>
-        Günlük nöbetçi eczane hatırlatması için bildirim izni talep ederiz. Bu özelliği Ayarlar ekranından istediğiniz zaman kapatabilirsiniz.
+        İlaç hatırlatması ve günlük nöbetçi eczane bildirimi için bildirim izni talep ederiz. Bildirimler tamamen cihazınız üzerinde çalışır; kişisel sağlık veriniz bizimle paylaşılmaz. Bu özelliği Ayarlar ekranından istediğiniz zaman kapatabilirsiniz.
       </p>
     </div>
 
@@ -100,12 +124,13 @@
       <ul>
         <li>Ad, soyad veya e-posta adresi</li>
         <li>Telefon numarası</li>
-        <li>Sağlık verileri veya tıbbi geçmiş</li>
+        <li>Sağlık verileri, ilaç geçmişi veya tıbbi kayıtlar</li>
+        <li>İlaç hatırlatma içerikleri (cihazınızda kalır)</li>
         <li>Ödeme bilgileri</li>
         <li>Uygulama içi arama geçmişi</li>
         <li>Kullanım istatistikleri (analitik hesabı tutmuyoruz)</li>
       </ul>
-      <p>Eczo, kullanıcı hesabı gerektirmez. Kişisel bir profil oluşturulmaz.</p>
+      <p>Eczo kullanıcı hesabı gerektirmez. Kişisel bir profil oluşturulmaz.</p>
     </div>
 
     <div class="card">
@@ -118,7 +143,7 @@
 
       <p style="margin-top:14px;"><strong>OpenStreetMap / Overpass API</strong></p>
       <p>
-        Hastane ve eczane verilerini OpenStreetMap'ten çekiyoruz. Bu sorgular IP adresinizi içerebilir; ancak biz bu verileri kaydetmiyoruz.
+        Eczane ve hastane verilerini OpenStreetMap'ten çekiyoruz. Bu sorgular IP adresinizi içerebilir; ancak biz bu verileri kaydetmiyoruz.
       </p>
       <p><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Gizlilik Politikası →</a></p>
 
@@ -126,12 +151,16 @@
       <p>
         Konumunuzu il/ilçe adına çevirmek için Nominatim kullanılır. Koordinatlarınız bu servise iletilir; biz bu veriyi saklamıyoruz.
       </p>
+      <p style="margin-top:14px;"><strong>İlaç &amp; Sağlık Rehberi Veritabanı</strong></p>
+      <p>
+        İlaç bilgisi ve sağlık rehberi içerikleri uygulama içine gömülüdür. Bu özellikler için herhangi bir üçüncü taraf servisine veri gönderilmez.
+      </p>
     </div>
 
     <div class="card">
       <h2>Veri Güvenliği</h2>
       <p>
-        Eczo sunucularında kullanıcı verisi tutulmamaktadır. Uygulama içindeki tüm tercihler (bildirim ayarları, renk teması) yalnızca cihazınızdaki yerel depolamada (UserDefaults) saklanır ve yalnızca siz erişebilirsiniz.
+        Eczo sunucularında kullanıcı verisi tutulmamaktadır. Uygulama içindeki tüm tercihler (ilaç hatırlatmaları, bildirim ayarları, renk teması) yalnızca cihazınızdaki yerel depolamada (UserDefaults) saklanır ve yalnızca siz erişebilirsiniz. Cihazınızı sıfırladığınızda veya uygulamayı sildiğinizde tüm veriler kalıcı olarak silinir.
       </p>
     </div>
 
