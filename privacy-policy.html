@@ -47,75 +47,96 @@
       border-radius: 20px; margin-bottom: 14px;
     }
     .feature-row {
-      display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px;
+      display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;
     }
+    .feature-row:last-child { margin-bottom: 0; }
     .feature-icon {
-      font-size: 20px; width: 36px; height: 36px; background: #f0faf4;
-      border-radius: 8px; display: flex; align-items: center;
-      justify-content: center; flex-shrink: 0;
+      width: 36px; height: 36px; background: #f0faf4; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-    .feature-text strong { display: block; font-size: 14px; margin-bottom: 2px; }
+    .feature-icon svg { width: 18px; height: 18px; fill: #2db866; }
+    .feature-text strong { display: block; font-size: 14px; margin-bottom: 2px; color: #1d1d1f; }
     .feature-text span { font-size: 13px; color: #6e6e73; line-height: 1.5; }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">Eczo</div>
-    <div class="subtitle">Nöbetçi Eczane &amp; Sağlık Rehberi</div>
+    <div class="subtitle">Nobetci Eczane &amp; Saglik Rehberi</div>
   </header>
 
   <div class="container">
 
     <div class="card">
       <span class="badge">Gizlilik</span>
-      <h1>Gizlilik Politikası</h1>
-      <p class="updated">Son güncelleme: Haziran 2026</p>
+      <h1>Gizlilik Politikasi</h1>
+      <p class="updated">Son guncelleme: Haziran 2026</p>
       <p style="margin-top:14px;">
-        Eczo uygulamasını kullandığınız için teşekkür ederiz. Bu politika; nöbetçi eczane, hastane, ilaç bilgisi, sağlık rehberi ve ilaç hatırlatma özelliklerini kapsayan uygulamamızın hangi bilgilere eriştiğini, bu bilgileri nasıl kullandığımızı ve sizi nasıl koruduğumuzu açıklamaktadır.
+        Eczo uygulamasini kullandiginiz icin tesekkur ederiz. Bu politika; nobetci eczane, hastane, ilac bilgisi, saglik rehberi ve ilac hatirlatma ozelliklerini kapsayan uygulamamizin hangi bilgilere eristigini, bu bilgileri nasil kullandigimizi ve sizi nasil korudugumumuzu aciklamaktadir.
       </p>
     </div>
 
     <div class="card">
-      <h2>Uygulama Özellikleri</h2>
+      <h2>Uygulama Ozellikleri</h2>
+
       <div class="feature-row">
-        <div class="feature-icon">📍</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+          </svg>
+        </div>
         <div class="feature-text">
-          <strong>Nöbetçi Eczane &amp; Hastane</strong>
-          <span>Konumunuza en yakın nöbetçi eczane ve hastaneleri harita üzerinde gösterir.</span>
+          <strong>Nobetci Eczane &amp; Hastane</strong>
+          <span>Konumunuza en yakin nobetci eczane ve hastaneleri harita uzerinde gosterir.</span>
         </div>
       </div>
+
       <div class="feature-row">
-        <div class="feature-icon">💊</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.54 15.96.5 13.5.5c-1.3 0-2.43.56-3.27 1.44L9 3.17 7.77 1.94C6.93 1.06 5.8.5 4.5.5 2.04.5 0 2.54 0 5c0 .45.11.89.18 1.33H0v2h.5l1.5 14h20l1.5-14H24V6h-4zm-7.5 9.5h-1v1h-1v-1h-1v-1h1v-1h1v1h1v1z"/>
+          </svg>
+        </div>
         <div class="feature-text">
-          <strong>İlaç Bilgisi</strong>
-          <span>166+ ilaç hakkında kullanım, doz ve yan etki bilgisi sunar. Tüm bilgiler uygulama içinde saklanır, internet bağlantısı gerektirmez.</span>
+          <strong>Ilac Bilgisi</strong>
+          <span>166+ ilac hakkinda kullanim, doz ve yan etki bilgisi sunar. Tum bilgiler uygulama icinde saklanir, internet baglantisi gerektirmez.</span>
         </div>
       </div>
+
       <div class="feature-row">
-        <div class="feature-icon">📖</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+          </svg>
+        </div>
         <div class="feature-text">
-          <strong>Sağlık Rehberi</strong>
-          <span>İlk yardım, semptomlar ve sağlıklı yaşam konularında rehberlik sağlar. İnternet bağlantısı gerektirmez.</span>
+          <strong>Saglik Rehberi</strong>
+          <span>Ilk yardim, semptomlar ve saglikli yasam konularinda rehberlik saglar. Internet baglantisi gerektirmez.</span>
         </div>
       </div>
+
       <div class="feature-row">
-        <div class="feature-icon">🔔</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+          </svg>
+        </div>
         <div class="feature-text">
-          <strong>İlaç Hatırlatması</strong>
-          <span>Belirttiğiniz saatlerde ilaç alma bildirimi gönderir. Tüm hatırlatma verileri yalnızca cihazınızda saklanır.</span>
+          <strong>Ilac Hatirlatmasi</strong>
+          <span>Belirttiginiz saatlerde ilac alma bildirimi gonderir. Tum hatirlatma verileri yalnizca cihazinizda saklanir.</span>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <h2>Topladığımız Bilgiler</h2>
+      <h2>Topladigimiz Bilgiler</h2>
       <p><strong>Konum Bilgisi</strong></p>
       <p>
-        Eczo, size en yakın nöbetçi eczaneleri ve hastaneleri gösterebilmek için cihazınızın konum bilgisine erişir. Konum verisi yalnızca cihazınızda işlenir; sunucularımıza gönderilmez veya depolanmaz. Uygulamayı kapattığınızda konum verisi silinir.
+        Eczo, size en yakin nobetci eczaneleri ve hastaneleri gosterebilmek icin cihazinizin konum bilgisine erisir. Konum verisi yalnizca cihazinizda islenir; sunucularimiza gonderilmez veya depolanmaz. Uygulamayi kapattığınızda konum verisi silinir.
       </p>
-      <p style="margin-top:12px;"><strong>Bildirim İzni</strong></p>
+      <p style="margin-top:12px;"><strong>Bildirim Izni</strong></p>
       <p>
-        İlaç hatırlatması ve günlük nöbetçi eczane bildirimi için bildirim izni talep ederiz. Bildirimler tamamen cihazınız üzerinde çalışır; kişisel sağlık veriniz bizimle paylaşılmaz. Bu özelliği Ayarlar ekranından istediğiniz zaman kapatabilirsiniz.
+        Ilac hatirlatmasi ve gunluk nobetci eczane bildirimi icin bildirim izni talep ederiz. Bildirimler tamamen cihaziniz uzerinde calisir; kisisel saglik veriniz bizimle paylasilmaz. Bu ozelligi Ayarlar ekranindan istediginiz zaman kapatabilirsiniz.
       </p>
     </div>
 
@@ -123,64 +144,65 @@
       <h2>Toplamadığımız Bilgiler</h2>
       <ul>
         <li>Ad, soyad veya e-posta adresi</li>
-        <li>Telefon numarası</li>
-        <li>Sağlık verileri, ilaç geçmişi veya tıbbi kayıtlar</li>
-        <li>İlaç hatırlatma içerikleri (cihazınızda kalır)</li>
-        <li>Ödeme bilgileri</li>
-        <li>Uygulama içi arama geçmişi</li>
-        <li>Kullanım istatistikleri (analitik hesabı tutmuyoruz)</li>
+        <li>Telefon numarasi</li>
+        <li>Saglik verileri, ilac gecmisi veya tibbi kayitlar</li>
+        <li>Ilac hatirlatma icerikleri (cihazinizda kalir)</li>
+        <li>Odeme bilgileri</li>
+        <li>Uygulama ici arama gecmisi</li>
+        <li>Kullanim istatistikleri (analitik hesabi tutmuyoruz)</li>
       </ul>
-      <p>Eczo kullanıcı hesabı gerektirmez. Kişisel bir profil oluşturulmaz.</p>
+      <p>Eczo kullanici hesabi gerektirmez. Kisisel bir profil olusturulmaz.</p>
     </div>
 
     <div class="card">
-      <h2>Üçüncü Taraf Hizmetler</h2>
+      <h2>Ucuncu Taraf Hizmetler</h2>
       <p><strong>Google AdMob</strong></p>
       <p>
-        Uygulamamız reklam göstermek için Google AdMob kullanmaktadır. AdMob, reklam kişiselleştirmek amacıyla cihaz tanımlayıcısı (IDFA) ve benzeri verileri toplayabilir. Bu veri toplama işlemi Google'ın gizlilik politikasına tabidir.
+        Uygulamamiz reklam gostermek icin Google AdMob kullanmaktadir. AdMob, reklam kisiselleştirmek amaciyla cihaz tanimlayicisi (IDFA) ve benzeri verileri toplayabilir. Bu veri toplama islemi Google'in gizlilik politikasina tabidir.
       </p>
-      <p><a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası →</a></p>
+      <p><a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikasi</a></p>
 
       <p style="margin-top:14px;"><strong>OpenStreetMap / Overpass API</strong></p>
       <p>
-        Eczane ve hastane verilerini OpenStreetMap'ten çekiyoruz. Bu sorgular IP adresinizi içerebilir; ancak biz bu verileri kaydetmiyoruz.
+        Eczane ve hastane verilerini OpenStreetMap'ten cekiyoruz. Bu sorgular IP adresinizi icerebilir; ancak biz bu verileri kaydetmiyoruz.
       </p>
-      <p><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Gizlilik Politikası →</a></p>
+      <p><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Gizlilik Politikasi</a></p>
 
       <p style="margin-top:14px;"><strong>Nominatim</strong></p>
       <p>
-        Konumunuzu il/ilçe adına çevirmek için Nominatim kullanılır. Koordinatlarınız bu servise iletilir; biz bu veriyi saklamıyoruz.
+        Konumunuzu il/ilce adina cevirmek icin Nominatim kullanilir. Koordinatlariniz bu servise iletilir; biz bu veriyi saklamiyoruz.
       </p>
-      <p style="margin-top:14px;"><strong>İlaç &amp; Sağlık Rehberi Veritabanı</strong></p>
+
+      <p style="margin-top:14px;"><strong>Ilac &amp; Saglik Rehberi Veritabani</strong></p>
       <p>
-        İlaç bilgisi ve sağlık rehberi içerikleri uygulama içine gömülüdür. Bu özellikler için herhangi bir üçüncü taraf servisine veri gönderilmez.
+        Ilac bilgisi ve saglik rehberi icerikleri uygulama icine gomulmustur. Bu ozellikler icin herhangi bir ucuncu taraf servisine veri gonderilmez.
       </p>
     </div>
 
     <div class="card">
-      <h2>Veri Güvenliği</h2>
+      <h2>Veri Guvenligi</h2>
       <p>
-        Eczo sunucularında kullanıcı verisi tutulmamaktadır. Uygulama içindeki tüm tercihler (ilaç hatırlatmaları, bildirim ayarları, renk teması) yalnızca cihazınızdaki yerel depolamada (UserDefaults) saklanır ve yalnızca siz erişebilirsiniz. Cihazınızı sıfırladığınızda veya uygulamayı sildiğinizde tüm veriler kalıcı olarak silinir.
+        Eczo sunucularinda kullanici verisi tutulmamaktadir. Uygulama icindeki tum tercihler (ilac hatirlatmalari, bildirim ayarlari, renk temasi) yalnizca cihazinızdaki yerel depolamada saklanir ve yalnizca siz erisebilirsiniz. Cihazinizi sifirlaydiginizda veya uygulamayi sildiginizde tum veriler kalici olarak silinir.
       </p>
     </div>
 
     <div class="card">
-      <h2>Çocukların Gizliliği</h2>
+      <h2>Cocuklarin Gizliligi</h2>
       <p>
-        Eczo, 13 yaş altı çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamayız. Bir ebeveyn veya veli olarak çocuğunuzun veri paylaştığını fark ederseniz bizimle iletişime geçin.
+        Eczo, 13 yas alti cocuklara yonelik degildir ve bu yas grubundan bilerek kisisel veri toplamayiz. Bir ebeveyn veya veli olarak cocugunuzun veri paylastigini fark ederseniz bizimle iletisime gecin.
       </p>
     </div>
 
     <div class="card">
-      <h2>Değişiklikler</h2>
+      <h2>Degisiklikler</h2>
       <p>
-        Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda uygulama içinde bildirim yapılacaktır. Politikanın güncel halini her zaman bu sayfada bulabilirsiniz.
+        Bu gizlilik politikasini zaman zaman guncelleyebiliriz. Onemli degisiklikler oldugunda uygulama icinde bildirim yapilacaktir. Politikanin guncel halini her zaman bu sayfada bulabilirsiniz.
       </p>
     </div>
 
     <div class="card">
-      <h2>İletişim</h2>
-      <p>Gizlilikle ilgili sorularınız için:</p>
+      <h2>Iletisim</h2>
+      <p>Gizlilikle ilgili sorulariniz icin:</p>
       <p><a href="mailto:dursunaras@gmail.com">dursunaras@gmail.com</a></p>
     </div>
 
